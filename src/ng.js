@@ -37,6 +37,6 @@ window.$ng = {
       }
     });
 
-    console.log(watchersWithoutDuplicates.length);
+    console.log('Watchers count:', watchersWithoutDuplicates.length);
   }
 };
