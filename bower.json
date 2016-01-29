@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-angular",
   "description": "",
-  "main": "./dist/sl-ng.min.js",
+  "main": "./dist/bootstrap-ng.min.js",
   "authors": [
     "Nicolás Gonzálvez <cristopher.gonzalvez@gmail.com>"
   ],
