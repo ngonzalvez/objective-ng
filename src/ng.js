@@ -2,8 +2,27 @@ window.$ng = {
   Directive: Directive,
   Controller: Controller,
   Module: Module,
+  Service: Service,
+  Factory: Factory,
 
+  /**
+   * Register the given class in its corresponding module.
+   * @method
+   *
+   * @param {Class} cls   An instance of injectable.
+   */
   register: function(cls) {
+    const type = cls.$type;
+    const noModule = !cls.module || !cls.module.trim();
+
+    // If this is not a Module class and has no module defined,
+    // raise an error.
+    if (type !== 'module' && noModule) {
+      const name = cls.name;
+
+      throw new Error(`Module not defined for ${type} "${name}"`);
+    }
+
     cls.register(cls);
   },
 
