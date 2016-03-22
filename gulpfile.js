@@ -37,7 +37,7 @@ gulp.task('js', function() {
         'transform-class-properties'
       ]
     }))
-    .pipe(plugins.concat('bootstrap-ng.min.js'))
+    .pipe(plugins.concat('objective-ng.min.js'))
     .pipe(gulp.dest(PATHS.DEST));
 });
 

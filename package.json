@@ -1,8 +1,8 @@
 {
-  "name": "bootstrap-ng",
-  "version": "0.2.0",
+  "name": "objective-ng",
+  "version": "1.0.0",
   "description": "",
-  "main": "dist/bootstrap-ng.min.js",
+  "main": "dist/objective-ng.min.js",
   "directories": {
     "test": "tests"
   },
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.sophilabs.io:sophilabs/bootstrap-angular.git"
+    "url": "git@github.com:ngonzalvez/objective-ng.git"
   },
   "author": "",
   "license": "ISC"
