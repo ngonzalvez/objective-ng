@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-ng",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "main": "dist/bootstrap-ng.min.js",
   "directories": {
