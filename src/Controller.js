@@ -5,6 +5,10 @@ class Controller extends Injectable {
   static $type = 'controller';
   static module = '';
 
+  constructor(...args) {
+    super(...args);
+  }
+
   /**
    * Register the given controller in the corresponding angular module.
    * @method

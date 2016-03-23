@@ -31,7 +31,7 @@ gulp.task('js', function() {
     .src(PATHS.SRC)
     .pipe(plugins.debug({ title: 'Processing script:' }))
     .pipe(plugins.babel({
-      presets: ['es2015'],
+      presets: ['es2015-loose'],
       plugins: [
         'syntax-class-properties',
         'transform-class-properties'
