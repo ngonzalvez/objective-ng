@@ -2,7 +2,6 @@ class Directive extends Injectable {
   static $type = 'directive';
   static module = '';
   static dependencies = [];
-  static tagName = '';
   static Element = 'E';
   static Attribute = 'A';
 
@@ -19,6 +18,6 @@ class Directive extends Injectable {
 
     angular
       .module(directive.module)
-      .directive(directive.tagName, injected);
+      .directive(directive.name, injected);
   }
 }
