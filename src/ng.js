@@ -2,6 +2,11 @@ window.$ng = {
   Directive: Directive,
   Controller: Controller,
   Module: Module,
+  Bindings: {
+    Reference: '=',
+    Value: '@',
+    Delayed: '&'
+  },
 
   register: function(cls) {
     cls.register(cls);
