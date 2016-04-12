@@ -6,6 +6,7 @@ var PATHS = {
     'src/Injectable.js',
     'src/Controller.js',
     'src/Directive.js',
+    'src/Component.js',
     'src/Service.js',
     'src/Factory.js',
     'src/Module.js',
