@@ -1,6 +1,6 @@
 {
   "name": "objective-ng",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "dist/objective-ng.min.js",
   "directories": {
@@ -26,6 +26,6 @@
     "type": "git",
     "url": "git@github.com:ngonzalvez/objective-ng.git"
   },
-  "author": "",
+  "author": "Nicolás Gonzálvez <cristopher.gonzalvez@gmail.com>",
   "license": "MIT"
 }

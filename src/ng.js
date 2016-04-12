@@ -17,9 +17,15 @@ if (Function.prototype.name === undefined && Object.defineProperty !== undefined
 window.$ng = {
   Directive: Directive,
   Controller: Controller,
+  Component: Component,
   Module: Module,
   Service: Service,
   Factory: Factory,
+  Bindings: {
+    Reference: '=',
+    Value: '@',
+    Delayed: '&'
+  },
 
   /**
    * Register the given class in its corresponding module.
