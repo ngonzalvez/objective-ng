@@ -1,14 +1,49 @@
+/**
+ * Hack in support for Function.name for browsers that don't support it.
+ * IE, I'm looking at you.
+**/
+if (Function.prototype.name === undefined && Object.defineProperty !== undefined) {
+    Object.defineProperty(Function.prototype, 'name', {
+        get: function() {
+            var funcNameRegex = /function\s([^(]{1,})\(/;
+            var results = (funcNameRegex).exec((this).toString());
+            return (results && results.length > 1) ? results[1].trim() : "";
+        },
+        set: function(value) {}
+    });
+}
+
+
 window.$ng = {
   Directive: Directive,
   Controller: Controller,
   Module: Module,
+  Service: Service,
+  Factory: Factory,
   Bindings: {
     Reference: '=',
     Value: '@',
     Delayed: '&'
   },
 
+  /**
+   * Register the given class in its corresponding module.
+   * @method
+   *
+   * @param {Class} cls   An instance of injectable.
+   */
   register: function(cls) {
+    const type = cls.$type;
+    const noModule = !cls.module || !cls.module.trim();
+
+    // If this is not a Module class and has no module defined,
+    // raise an error.
+    if (type !== 'module' && noModule) {
+      const name = cls.name;
+
+      throw new Error(`Module not defined for ${type} "${name}"`);
+    }
+
     cls.register(cls);
   },
 

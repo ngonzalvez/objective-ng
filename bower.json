@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap-ng",
+  "name": "objective-ng",
   "description": "",
-  "main": "./dist/bootstrap-ng.min.js",
+  "main": "./dist/objective-ng.min.js",
   "authors": [
     "Nicolás Gonzálvez <cristopher.gonzalvez@gmail.com>"
   ],

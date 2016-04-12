@@ -29,7 +29,6 @@ class Injectable {
    */
   inject(depName) {
     const dependency = this.constructor.$deps[depName];
-    // $ng.debug(`${ctrlName}: Injecting ${depName}`);
 
     if (dependency === null || dependency === undefined) {
       const clsName = this.constructor.name;

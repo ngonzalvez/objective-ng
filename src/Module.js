@@ -6,6 +6,7 @@ class Module {
   static configDependencies = [];
   static runDependencies = [];
   static moduleName = '';
+  static $type = 'module';
 
   /**
    * Module configuration method.

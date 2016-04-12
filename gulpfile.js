@@ -6,6 +6,8 @@ var PATHS = {
     'src/Injectable.js',
     'src/Controller.js',
     'src/Directive.js',
+    'src/Service.js',
+    'src/Factory.js',
     'src/Module.js',
     'src/ng.js'
   ],
@@ -29,7 +31,7 @@ gulp.task('js', function() {
     .src(PATHS.SRC)
     .pipe(plugins.debug({ title: 'Processing script:' }))
     .pipe(plugins.babel({
-      presets: ['es2015'],
+      presets: ['es2015-loose'],
       plugins: [
         'syntax-class-properties',
         'transform-class-properties'

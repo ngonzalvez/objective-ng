@@ -1,8 +1,8 @@
 {
-  "name": "bootstrap-ng",
-  "version": "0.1.0",
+  "name": "objective-ng",
+  "version": "1.0.0",
   "description": "",
-  "main": "dist/bootstrap-ng.min.js",
+  "main": "dist/objective-ng.min.js",
   "directories": {
     "test": "tests"
   },
@@ -11,6 +11,7 @@
     "babel-plugin-syntax-class-properties": "^6.3.13",
     "babel-plugin-transform-class-properties": "^6.4.0",
     "babel-preset-es2015": "^6.3.13",
+    "babel-preset-es2015-loose": "^7.0.0",
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.1",
     "gulp-concat": "^2.6.0",
@@ -23,8 +24,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.sophilabs.io:sophilabs/bootstrap-angular.git"
+    "url": "git@github.com:ngonzalvez/objective-ng.git"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Nicolás Gonzálvez <cristopher.gonzalvez@gmail.com>",
+  "license": "MIT"
 }
