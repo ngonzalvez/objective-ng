@@ -3,6 +3,8 @@ class Directive extends Injectable {
   static module = '';
   static dependencies = [];
   static tagName = '';
+  static Element = 'E';
+  static Attribute = 'A';
 
 
   static register(directive) {
