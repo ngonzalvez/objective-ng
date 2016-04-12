@@ -10,7 +10,7 @@ class Component extends Injectable {
       component.apply(instance, arguments);
 
       return instance;
-    });
+    };
 
     injected.$inject = component.dependencies;
     component.restrict = Directive.Element;
