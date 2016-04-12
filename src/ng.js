@@ -17,6 +17,7 @@ if (Function.prototype.name === undefined && Object.defineProperty !== undefined
 window.$ng = {
   Directive: Directive,
   Controller: Controller,
+  Component: Component,
   Module: Module,
   Service: Service,
   Factory: Factory,
