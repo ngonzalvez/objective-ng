@@ -4,20 +4,20 @@ class Component extends Injectable {
   static dependencies = [];
 
   static register(component) {
-    const name = component.name[0].toLowerCase() + component.slice(1);
+    const name = component.name[0].toLowerCase() + component.name.slice(1);
     const injected = function() {
       const instance = Object.create(component.prototype);
       component.apply(instance, arguments);
+      instance.scope = instance.bindings;
+      instance.restrict = Directive.Element;
 
       return instance;
     };
 
     injected.$inject = component.dependencies;
-    component.restrict = Directive.Element;
-    component.scope = component.bindings;
 
     angular
-      .module(directive.module)
+      .module(component.module)
       .directive(name, injected);
   }
 }
