@@ -1,6 +1,6 @@
 {
   "name": "objective-ng",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "description": "",
   "main": "dist/objective-ng.min.js",
   "directories": {
